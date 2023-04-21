@@ -1,0 +1,38 @@
+<div data---="LAZY message__null__style:2"></div>
+
+<div style="max-width:500px;margin:0 auto">
+	<div data-scope="contactform">
+		<div class="row">
+			<div class="col-md-6 m">
+				<div data---="input__?.firstname__required:1;maxlength:30__''">First name</div>
+			</div>
+			<div class="col-md-6 m">
+				<div data---="input__?.lastname__required:1;maxlength:30__''">Last name</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 m">
+				<div data---="input__?.email__required:1;type:email__'@'">E-mail address</div>
+			</div>
+			<div class="col-md-4 m">
+				<div data---="input__?.age__required:1;type:number__15">Age</div>
+			</div>
+		</div>
+		<div data---="checkbox__?.terms__null__false">I agree with terms and conditions</div>
+		<br />
+		<div data---="validation__?">
+			<button name="submit" data-bind="null__click:submitform" disabled>Submit form</button>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	function submitform() {
+		AJAX('POST /', GET('contactform @reset'), ASETTER('message/response', 'Thank you! Form has been sent successfully.', function(response) {
+			console.log(response);
+			SET('contactform @default', {});
+		}));
+	}
+
+</script>

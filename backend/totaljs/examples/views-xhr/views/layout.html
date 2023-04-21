@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Site</title>
+	<meta charset="utf-8" />
+	<script src="//cdn.componentator.com/spa.min@17.js"></script>
+</head>
+<body>
+
+	<div id="menu">
+		<a onclick="loadpanel('company')" href="#">company</a>&nbsp;
+		<a onclick="loadpanel('product')" href="#">product</a>&nbsp;
+		<a onclick="loadpanel('contact')" href="#">contact</a>
+	</div>
+	<hr />
+	<div id="panel">@{body}</div>
+
+	<script type="text/javascript">
+		function loadpanel(choice) {
+			AJAX('POST /xhr/', { choice: choice }, function(response) {
+				$('#panel').html(response);
+				console.log(response);
+			});
+		}
+	</script>
+
+</body>
+</html>
