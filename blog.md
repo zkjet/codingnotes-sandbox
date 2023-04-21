@@ -29,6 +29,7 @@ Android studio by jetbrains is a new world. Never worked with Kotlin either, did
 [X] Added .gitignore items for both android and ios
 [X] Built android project successfully in IDE without errors
 [X] Built ios project successfully in IDE finally without errors
+[X] Installed svelte frontend counter app
 
 Challenges:
 
@@ -51,6 +52,8 @@ Xiaomi Redmi Note 10 and Note 10 Pro
 It's important to note that popularity can change over time, and new Android phones are released frequently, so it's always a good idea to do your research before purchasing a new device.
 
 I seriously had no idea, it's been over a decade since I've even used an android phone. So "Samsung Galaxy S21 series" is #1 according to chatGPT, very interesting. I wonder how android devs account for so many different devices opposed to ios developers easy of only a few. Strange.
+
+Added svelte frontend sample project which included a counter.
 
 ---
 
