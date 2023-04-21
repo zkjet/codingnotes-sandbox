@@ -1,0 +1,2 @@
+Limiting NFT Minting to a Specific Timeframe in Solidity
+https://www.youtube.com/watch?v=TWXl8lg5XJo
