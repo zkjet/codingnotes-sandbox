@@ -1,0 +1,3 @@
+[submodule "web3/wallets/tallyho/extension"]
+	path = web3/wallets/tallyho/extension
+	url = https://github.com/zkjet/extension.git
