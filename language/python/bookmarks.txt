@@ -1,1 +1,2 @@
 https://www.freecodecamp.org/news/python-automation-scripts/
+https://www.pythonforbeginners.com/os/pythons-os-module
